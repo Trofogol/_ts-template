@@ -1,7 +1,11 @@
 # TypeScript template project
 
 This is a template file layout for TypeScript project. It contains prepared 
-`.gitignore` and `tsconfig.json` files to jumpstart any development
+`.gitignore` and `tsconfig.json` files to jumpstart any development.
+
+> Note: as you will add 3rd party modules (libraries), `package.json` and 
+`package-lock.json` files should appear. They contain list of all external 
+dependencies of your project. Make sure to commit them to your repo as well.
 
 ## Build
 
