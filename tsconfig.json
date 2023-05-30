@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // output options
-    "noEmitOnError": true,  // do not create .js files in case of ts errors
+    "noEmitOnError": true,  // do not update .js files in case of TS errors
     "module": "commonjs",
     "target": "es2021",
     "moduleResolution": "node",
@@ -12,7 +12,7 @@
     "paths": {
       "*": ["node_modules/*", "src/types/*"]
     },
-    "allowJs": true,  // allow usage of JS modules
+    "allowJs": true,  // allow usage of JS (not TS) modules
   },
-  "include": ["src/**/*"] //  where take files for compilation
+  "include": ["src/**/*"] // where take files for compilation from
 }
