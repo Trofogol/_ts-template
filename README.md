@@ -1,5 +1,7 @@
 # TypeScript template project
 
+Level: beginner
+
 This is a template file layout for TypeScript project. It contains prepared 
 `.gitignore` and `tsconfig.json` files to jumpstart any development.
 
@@ -54,6 +56,9 @@ You can rename your main file as you please, just make sure you are working with
 If you got no errors after the run, you are ready to go. Edit the code in `src` 
 directory, compile it and run from `dist` directory. Repeat until you are 
 satisfied.
+
+Feel free to play around with `tsconfig.json` ([docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)),
+ rename your folders or change compiler behaviour. It is your project now.
 
 Refer to [the documentation](https://www.typescriptlang.org/docs/handbook/2/modules.html) 
 for more information about modules. Short version is described below.
