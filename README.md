@@ -60,19 +60,32 @@ satisfied.
 Feel free to play around with `tsconfig.json` ([docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)),
  rename your folders or change compiler behaviour. It is your project now.
 
+It is recommended to initialize your project as a module (set name, version, 
+dependencies etc.). To do it, run
+```
+npm init
+```
+An interactive creation of `package.json` file will be started. Fill out prompted 
+fields, and you are good to go.
+
+More iformation about `package.json` fields can be found in 
+[the official docs](https://docs.npmjs.com/creating-a-package-json-file).
+
+### Modules (libraries)
+
 Refer to [the documentation](https://www.typescriptlang.org/docs/handbook/2/modules.html) 
 for more information about modules. Short version is described below.
 
-### External modules (libraries)
+#### External modules
 
-1. Install the module you want to use (it will appear in `node_modules` 
+1. Install a module you want to use (it will appear in `node_modules` 
 directory)
 
 ```
 npm install module-name
 ```
 
-2. Import to your code (any of `.ts` file):
+2. Import it to your code (any of `.ts` file):
 
 - everything
 
@@ -93,11 +106,11 @@ import specificSomething1, { specificSomething2 as alias } from 'module-name'
 ```
 
 > `'module-name'` is the exact name of the installed module from the previous 
-step; `alias` is an alias you are free to rename as you please; 
+step; `[module-]alias` is an alias you are free to name as you please; 
 `specificSomething1` is the exact name of exported object/function/constant/etc
-described in module
+described in module source code
 
-### Local modules (libraries)
+#### Local modules
 
 Connect them as described above (step 2 only), just replace `'module-name'` with 
 `'./relative/path/to/file.ts'`
