@@ -1,18 +1,26 @@
 {
   "compilerOptions": {
     // output options
-    "noEmitOnError": true,  // do not update .js files in case of TS errors
+    "noEmitOnError": true, // do not update .js files in case of TS errors
     "module": "commonjs",
-    "target": "es2021",
+    "target": "es6",
     "moduleResolution": "node",
-    "sourceMap": true,  // generate .map files
+    "sourceMap": true, // generate .map files
     "outDir": "dist",
     // input options
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "*": ["node_modules/*", "src/types/*"]
+      "@/*": ["*"]
     },
-    "allowJs": true,  // allow usage of JS (not TS) modules
+    // allow usage of JS (not TS) modules
+    "esModuleInterop": true,
+    "allowJs": true,
+    // decorators (some modules won't work w/o them)
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // strict type checking
+    "strict": true
   },
-  "include": ["src/**/*"] // where take files for compilation from
+  // where take files for compilation from
+  "include": ["src/**/*"]
 }
